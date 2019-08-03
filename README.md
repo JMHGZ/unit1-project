@@ -1,4 +1,4 @@
-# Lamplight
+# Lamplighter
 
 ## Choose Your Own Adventure Game
 #### Using  HTML, CSS & Javascript

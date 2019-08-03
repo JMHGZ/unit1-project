@@ -1,12 +1,47 @@
 html, * {
-    font-family: helvetica;
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+body {
+  font-family: 'Yeseva One', cursive;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 8vmin;
+}
+
+h1, h2 {
+  margin: 0 5vmin 10vmin 5vmin;
+}
+
+p {
+  font-family: 'Press Start 2P', cursive;
+  padding-left: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 55vmin 55vmin;
+  grid-template-rows: 7vmin 7vmin 7vmin 35vmin 7vmin 7vmin;
+  border: 2vmin solid white;
+  color: white;
+}
+
