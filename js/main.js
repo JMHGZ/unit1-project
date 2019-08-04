@@ -1,5 +1,7 @@
 /*----- constants -----*/
-
+const storyline = {
+ 
+};
 
 
 /*----- app's state (variables) -----*/

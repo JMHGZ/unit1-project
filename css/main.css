@@ -46,7 +46,8 @@ h2:hover {
 
 p {
   font-family: 'Press Start 2P', cursive;
-  padding: 1px 0 1px 10px;
+  padding: 1px 0 1px 15px;
+  display: inline-block;
 }
 
 main {
@@ -81,4 +82,15 @@ button:hover {
   border-radius: 1%;
 }
 
+#blink {
+  animation: blinkingText 1.4s infinite;
+  padding: 0;
+}
 
+@keyframes blinkingText {
+  0%{     color: white;    }
+  49%{    color: transparent; }
+  50%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color:white;    } 
+}
