@@ -34,7 +34,7 @@ h1, h2 {
 
 p {
   font-family: 'Press Start 2P', cursive;
-  padding-left: 10px;
+  padding: 1px 0 1px 10px;
 }
 
 main {
