@@ -30,6 +30,18 @@ header {
 
 h1, h2 {
   margin: 0 5vmin 10vmin 5vmin;
+ 
+
+}
+
+h2 {
+  font-size: 2.5vmin;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+h2:hover {
+ border-color: white;
 }
 
 p {
@@ -39,7 +51,7 @@ p {
 
 main {
   display: grid;
-  grid-template-columns: 55vmin 55vmin;
+  grid-template-columns: 42vmin 42vmin;
   grid-template-rows: 7vmin 7vmin 7vmin 35vmin 7vmin 7vmin;
   border: 2vmin solid white;
   color: white;
