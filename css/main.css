@@ -30,8 +30,6 @@ header {
 
 h1, h2 {
   margin: 0 5vmin 10vmin 5vmin;
- 
-
 }
 
 h2 {
@@ -48,6 +46,7 @@ p {
   font-family: 'Press Start 2P', cursive;
   padding: 1px 0 1px 15px;
   display: inline-block;
+  margin-right: 0;
 }
 
 main {
@@ -67,7 +66,10 @@ button {
 
 button:hover {
   background-color: rgb(60,	64,	67);	
-  
+}
+
+button:focus {
+  outline: none;
 }
 
 .btn1 {
