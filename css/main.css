@@ -83,21 +83,25 @@ button:focus {
   grid-row: 6 / 7;
 }
 
+#reset-btn {
+  border: .5vmin solid white;
+  padding: 10px;
+  margin: 20px 0 40px 0;
+}
+
 #game-box {
   border-radius: 1%;
 }
 
-#blink {
-  animation: blinkingText 1.4s infinite;
-  padding: 0;
-  display: inline-flex;
+/* #game-msg p {
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: inherit;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40,end);
 }
 
-
-@keyframes blinkingText {
-  0% { color: white; }
-  49% { color: transparent; }
-  50% { color: transparent; }
-  99% { color:transparent; }
-  100% { color: white; } 
-}
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+} */

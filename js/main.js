@@ -1,4 +1,9 @@
 /*----- constants -----*/
+    $("#btn1").click(function () {
+        $("p").fadeIn(3000);
+       
+    });
+
 const storyline = {
     begin: '',
 
@@ -48,51 +53,40 @@ const storyline = {
 const pickedChoice = {
 
     begin: {'btn1': 'LET US BEGIN', 'btn2': ''},
-
     stroll: {'btn1': 'head home early', 'btn2': 'let\'s keep walking'},
-
     bushNoises: {'btn1': 'investigate', 'btn2': 'let\'s go'},
-
     chasingYou: {'btn1': 'Turn and fight!', 'btn2': 'this running thing is working'},
-
     husbandDeath1: {'btn1': 'Look around you', 'btn2': 'RUN!'},
-
     investigateBush: {'btn1': 'get away from this psycho', 'btn2': 'help him'},
-
     strangerDeath: {'btn1': 'fight the attacker', 'btn2': 'time to run?'},
-
     noticeStick: {'btn1': 'eh, better yet, RUN!', 'btn2': 'grab the stick'},
-
     run: {'btn1': 'keep running', 'btn2': 'YOU NEED TO RUN FASTER!'},
-
     run2: {'btn1': 'grab stick', 'btn2': 'keep running you fool!'},
-
     run3: {'btn1': 'I can make it', 'btn2': 'keep running you fool!'},
-
     stick: {'btn1': 'hit it again!', 'btn2': 'ok, now time to run...'},
-
     stickAgain: {'btn1': 'AGAIN!!', 'btn2': 'I need help!'},
-
     stickAgain2: {'btn1': 'I got this bro!', 'btn2': 'I need help!'},
-
     callForHelp: {'btn1': '', 'btn2': ''},
-
     helpArrives: {'btn1': 'analyze the beast', 'btn2': 'thank the man'},
-
     youDied: {'btn1': 'YOU WERE TASTY', 'btn2': 'MEAT FOR THE CREATURE'},
-
     fin: {'btn1': 'to be continued...', 'btn2': '...'},
 };
 
-/*----- app's state (variables) -----*/
-let story, ending;
 
+
+/*----- app's state (variables) -----*/
+let story;
+// let i = 0;
+// let txt = story;
+// let speed = 50;
 
 /*----- cached element references -----*/
 const msgElem = document.getElementById('game-msg');
 const buttonOne = document.getElementById('btn1');
 const buttonTwo = document.getElementById('btn2');
-const cursorBlink = document.querySelector('p span');
+const cursorBlink = document.querySelector('span');
+
+
 
 
 /*----- event listeners -----*/
@@ -117,9 +111,20 @@ function render() {
 function gameBegin(evt) {
     if (story === storyline.begin) {
         story = storyline.stroll;
+
     };
     render();
 }
+
+
+
+// function typeTxt() {
+//     if (i < txt.length) {
+//         document.getElementById('game-msg').innerHTML += txt.charAt(i); 
+//         i++;
+//         setTimeout(typeTxt, speed);
+//     }
+// }
 /*-----------------------------------------*/
 
 

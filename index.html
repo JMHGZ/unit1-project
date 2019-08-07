@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Lamplight</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -16,12 +18,13 @@
        <h2>about</h2>
     </header>  
 <main id="game-box">
-       
+       <div id="demo">
         <p id="game-msg"></p>
-        <span id="blink">_</span>
+       </div> 
         
     <button id="btn1"></button>
     <button id="btn2"></button>
 </main>
+    <button id="reset-btn" value="reset page" onclick="window.location.reload();">Reset</button>
 </body>
 </html>
