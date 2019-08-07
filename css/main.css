@@ -29,7 +29,7 @@ header {
 }
 
 h1, h2 {
-  margin: 0 5vmin 10vmin 5vmin;
+  margin: 0 5vmin 5vmin 5vmin;
 }
 
 h2 {
@@ -84,13 +84,19 @@ button:focus {
 }
 
 #reset-btn {
-  border: .5vmin solid white;
+  border: .4vmin solid white;
   padding: 10px;
-  margin: 20px 0 40px 0;
+  margin: 2vmin 0 2vmin 0;
+  border-radius: 3%;
+  width: 50vw;
+}
+
+#reset-btn:hover {
+  background-color: firebrick;
 }
 
 #game-box {
-  border-radius: 1%;
+  border-radius: 3%;
 }
 
 /* #game-msg p {
