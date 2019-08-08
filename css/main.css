@@ -88,7 +88,7 @@ button:focus {
   padding: 10px;
   margin: 2vmin 0 2vmin 0;
   border-radius: 3%;
-  width: 50vw;
+  width: 40vw;
 }
 
 #reset-btn:hover {
@@ -98,6 +98,8 @@ button:focus {
 #game-box {
   border-radius: 3%;
 }
+
+
 
 /* #game-msg p {
   overflow: hidden;
