@@ -99,17 +99,3 @@ button:focus {
   border-radius: 3%;
 }
 
-
-
-/* #game-msg p {
-  overflow: hidden;
-  border-right: .15em solid white;
-  white-space: inherit;
-  margin: 0 auto;
-  animation: typing 3.5s steps(40,end);
-}
-
-@keyframes typing {
-  from {width: 0}
-  to {width: 100%}
-} */

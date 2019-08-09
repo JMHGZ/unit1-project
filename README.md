@@ -5,8 +5,9 @@
 
 ____
 
-###### The user will click through the text adventure game, reading and choosing between choices given.
+###### The user will click through the text adventure game, reading and choosing between choices given to make it to the end of the story.
 
+Launch Game: [Play Now](https://jmhgz.github.io/unit1-project/ "Game Link")
 
 ![Opening game screen](https://i.imgur.com/K7OvObg.png)
 
@@ -16,12 +17,8 @@ ____
 
 ___
 
-Try the game here: [Play Now](https://jmhgz.github.io/unit1-project/ "Game Link")
-
-____
-
 Planned future enhancements:
 
 * Add text typewriter or fade in effect.
-* Add sounds
-* Add screen effects
+* Expand story
+

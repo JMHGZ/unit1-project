@@ -48,17 +48,17 @@ const storyline = {
 const pickedChoice = {
 
     begin: {'btn1': 'LET US BEGIN', 'btn2': ''},
-    stroll: {'btn1': 'head home early', 'btn2': 'let\'s keep walking'},
-    bushNoises: {'btn1': 'investigate', 'btn2': 'let\'s go'},
-    chasingYou: {'btn1': 'Turn and fight!', 'btn2': 'this running thing is working'},
-    husbandDeath1: {'btn1': 'Look around you', 'btn2': 'RUN!'},
-    investigateBush: {'btn1': 'get away from this psycho', 'btn2': 'help him'},
-    strangerDeath: {'btn1': 'fight the attacker', 'btn2': 'time to run?'},
-    noticeStick: {'btn1': 'eh, better yet, RUN!', 'btn2': 'grab the stick'},
-    run: {'btn1': 'keep running', 'btn2': 'YOU NEED TO RUN FASTER!'},
-    run2: {'btn1': 'grab stick', 'btn2': 'keep running you fool!'},
-    run3: {'btn1': 'I can make it', 'btn2': 'keep running you fool!'},
-    stick: {'btn1': 'hit it again!', 'btn2': 'ok, now time to run...'},
+    stroll: {'btn1': 'Head Home Early', 'btn2': 'Let\'s Keep Walking'},
+    bushNoises: {'btn1': 'Investigate', 'btn2': 'Let\'s Go'},
+    chasingYou: {'btn1': 'Turn and Fight!', 'btn2': 'This Running Thing is Working'},
+    husbandDeath1: {'btn1': 'Look Around You', 'btn2': 'RUN!'},
+    investigateBush: {'btn1': 'Get Away from this Psycho', 'btn2': 'Help Him'},
+    strangerDeath: {'btn1': 'Fight the Attacker', 'btn2': 'Time to Run?'},
+    noticeStick: {'btn1': 'eh, better yet, RUN!', 'btn2': 'Grab the Stick'},
+    run: {'btn1': 'keep running...', 'btn2': 'YOU NEED TO RUN FASTER!'},
+    run2: {'btn1': 'Grab Stick', 'btn2': 'KEEP RUNNING you fool!'},
+    run3: {'btn1': 'I can make it', 'btn2': 'Well, might as well keep going!'},
+    stick: {'btn1': 'Hit it Again!', 'btn2': 'Ok, now it\'s time to run...'},
     stickAgain: {'btn1': 'AGAIN!!', 'btn2': 'I need help!'},
     stickAgain2: {'btn1': 'I got this bro!', 'btn2': 'I need help!'},
     callForHelp: {'btn1': '', 'btn2': ''},
@@ -66,8 +66,6 @@ const pickedChoice = {
     youDied: {'btn1': 'YOU WERE TASTY', 'btn2': 'MEAT FOR THE CREATURE'},
     fin: {'btn1': 'YOU SURVIVED!!!', 'btn2': ''},
 };
-
-
 
 
 /*----- app's state (variables) -----*/
@@ -81,7 +79,6 @@ const buttonTwo = document.getElementById('btn2');
 
 
 
-
 /*----- event listeners -----*/
 document.getElementById('btn1').addEventListener('click', storyChoice1);
 document.getElementById('btn2').addEventListener('click', storyChoice2);
@@ -90,6 +87,7 @@ document.getElementById('btn1').addEventListener('click', gameBegin);
 
 /*----- functions -----*/
 init();
+
 
 function init() {
     story = storyline.begin;
@@ -100,12 +98,6 @@ function render() {
     msgElem.textContent = story;
     storySwitch()
 }
-
-$(document).ready(function() {
-$("#btn1").click(function () {
-    $("game-txt").fadeIn(3000);
-    }); 
-});
 
 function gameBegin(evt) {
     if (story === storyline.begin) {
